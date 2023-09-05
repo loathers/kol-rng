@@ -1,0 +1,27 @@
+{
+  "name": "kol-rng",
+  "description": "Tools to simulate the PHP 5.3.10 RNG functions and state of the Kingdom of Loathing",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "author": "Sam Gaus <sam@gaus.co.uk>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/loathers/kol-rng"
+  },
+  "devDependencies": {
+    "@types/mersenne-twister": "^1.1.3",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "mersenne-twister": "^1.1.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "prepublish": "tsc"
+  }
+}
