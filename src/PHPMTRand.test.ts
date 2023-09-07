@@ -2,18 +2,28 @@ import { describe, expect, it } from "vitest";
 import { PHPMTRand } from "./PHPMTRand";
 
 describe("PHPMTRand", () => {
-  // it("Correctly guesses rolls", () => {
-  //     const rng = new PHPMTRand(69420);
-  //     expect(rng.roll(10, 20)).toBe(15);
-  //     expect(rng.roll(-5, 100)).toBe(4);
-  //     expect(rng.roll(0, 10000)).toBe(3567);
-  // });
-
-  it("Correctly guesses rolls where first roll is bounded with 0", () => {
-    const rng = new PHPMTRand(69420);
-    expect(rng.roll(2, 1000)).toBe(475);
-    expect(rng.roll(10, 20)).toBe(11);
-    expect(rng.roll(-5, 100)).toBe(32);
+  it.each([
+    [
+      69420,
+      [
+        [10, 20, 15],
+        [-5, 100, 4],
+        [0, 10000, 3567],
+      ],
+    ],
+    [
+      31337,
+      [
+        [2, 1000, 276],
+        [10, 20, 12],
+        [-5, 100, -1],
+      ],
+    ],
+  ])("Correctly guesses rolls", (seed, rolls) => {
+    const rng = new PHPMTRand(seed);
+    for (const [min, max, result] of rolls) {
+      expect(rng.roll(min, max)).toBe(result);
+    }
   });
 
   it("Correctly handles a negative seed", () => {
