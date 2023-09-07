@@ -43,10 +43,10 @@ export class RNG {
    *
    * @param array Array to pick from
    * @param quantity Quantity to pick
-   * @returns Array of picked items
+   * @returns Array of picked items (or sin)
    */
   pick<T>(array: T[], quantity: number) {
-    if (quantity == 1) return this.pickOne(array);
+    if (quantity == 1) return [this.pickOne(array)];
 
     return this.rand.pick(array, quantity);
   }
