@@ -1,7 +1,7 @@
 {
   "name": "kol-rng",
   "description": "Tools to simulate the PHP 5.3.10 RNG functions and state of the Kingdom of Loathing",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
