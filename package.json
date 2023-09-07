@@ -23,7 +23,7 @@
     "mersenne-twister": "^1.1.0"
   },
   "scripts": {
-    "docs": "yarn run typedoc",
+    "docs": "typedoc src",
     "format": "prettier --write .",
     "prepublish": "tsc",
     "test": "vitest"
