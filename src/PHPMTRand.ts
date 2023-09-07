@@ -58,7 +58,7 @@ MersenneTwister.prototype.random_int = function () {
 };
 
 export class PHPMTRand {
-  mt: MersenneTwister;
+  private mt: MersenneTwister;
 
   constructor(seed: number) {
     this.mt = new MersenneTwister(seed);
