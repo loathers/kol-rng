@@ -1,5 +1,5 @@
-import { PHPMTRand } from "./PHPMTRand";
-import { PHPRand } from "./PHPRand";
+import { PHPMTRand } from "./PHPMTRand.js";
+import { PHPRand } from "./PHPRand.js";
 
 export class RNG {
   readonly rand: PHPRand;

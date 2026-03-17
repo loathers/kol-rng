@@ -1,4 +1,4 @@
-import { INTEGER_MAX, bound } from "./util";
+import { INTEGER_MAX, bound } from "./util.js";
 
 export class PHPRand {
   private state: number[] = [];

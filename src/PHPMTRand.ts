@@ -1,5 +1,5 @@
 import MersenneTwister from "mersenne-twister";
-import { bound } from "./util";
+import { bound } from "./util.js";
 
 /**
  * Monkeypatched random_int function for MersenneTwister to replica PHP 5.3.10's bad implementation.
