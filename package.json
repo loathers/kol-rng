@@ -30,7 +30,7 @@
   "scripts": {
     "docs": "typedoc src",
     "format": "prettier --write .",
-    "prepublish": "tsc",
+    "build": "tsc",
     "test": "vitest"
   },
   "packageManager": "yarn@4.13.0"
