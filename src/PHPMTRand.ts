@@ -2,7 +2,7 @@ import MersenneTwister from "mersenne-twister";
 import { bound } from "./util.js";
 
 /**
- * Monkeypatched random_int function for MersenneTwister to replica PHP 5.3.10's bad implementation.
+ * Monkeypatched random_int function for MersenneTwister to replicate PHP 5.3.10's bad implementation.
  *
  * The change is that during the `twist` function that is repeated 3 times here, instead of raising
  * the new state value to the power of `mag01[y & 0x1]` at the end, we raise it to `((0xFFFFFFFF * (<CURRENT ITEM IN STATE> & 0x1)) & this.MATRIX_A)`.
