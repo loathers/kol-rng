@@ -1,6 +1,6 @@
-import { PHPMTRand } from "./PHPMTRand";
-import { PHPRand } from "./PHPRand";
-import { RNG } from "./RNG";
+import { PHPMTRand } from "./PHPMTRand.js";
+import { PHPRand } from "./PHPRand.js";
+import { RNG } from "./RNG.js";
 
 export { PHPRand, PHPMTRand };
 

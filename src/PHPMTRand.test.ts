@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { PHPMTRand } from "./PHPMTRand";
+import { PHPMTRand } from "./PHPMTRand.js";
 
 describe("PHPMTRand", () => {
   it.each([

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { PHPRand } from "./PHPRand";
+import { PHPRand } from "./PHPRand.js";
 
 describe("PHPRand", () => {
   it("Correctly guesses rolls", () => {
